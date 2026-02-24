@@ -30,6 +30,8 @@ permalink: /
 - **[Assignment 3: Synthesize a Sound (due February 10)](./assignment3/)**
 - [Week 4: Signal Processing](./week4/)
 - **[Assignment 4: Make an effect! (due February 24)](./assignment4/)**
+- [Week 5: Controllers](./week5/)
+- **[MIDTERM ASSIGNMENT](./midterm/)**
 
 
 ## Important resources
