@@ -85,8 +85,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 311.0, 347.0, 155.0, 67.0 ],
-                    "presentation_linecount": 5,
+                    "patching_rect": [ 311.0, 347.0, 157.0, 67.0 ],
                     "text": "zero crossing count (estimate of noise in signal)."
                 }
             },
@@ -107,7 +106,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 990.0, 627.0, 105.0, 47.0 ],
+                    "patching_rect": [ 990.0, 627.0, 107.0, 47.0 ],
                     "text": "< amplitude in decibels"
                 }
             },
@@ -162,8 +161,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 585.0, 347.0, 88.0, 47.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 585.0, 347.0, 93.0, 47.0 ],
                     "text": "convert to MIDI"
                 }
             },
@@ -204,7 +202,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 474.0, 160.0, 310.0, 27.0 ],
-                    "presentation_linecount": 3,
                     "text": "fundamental estimation (pitch tracker)"
                 }
             },
@@ -288,7 +285,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 252.0, 587.0, 232.0, 87.0 ],
-                    "presentation_linecount": 7,
                     "text": "[trigger] / [t] object goes right to left: close the gate (0), start the envelope ('b'), and set the pitch ('i')"
                 }
             },
@@ -393,6 +389,7 @@
             },
             {
                 "box": {
+                    "color": [ 0.0, 0.5603182912, 0.0, 1.0 ],
                     "id": "obj-46",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -629,7 +626,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 316.0, 84.0, 466.0, 47.0 ],
-                    "presentation_linecount": 8,
                     "text": "< if you double click the [adc~] object you can make sure it's input is set correctly to listen to your microphone."
                 }
             },

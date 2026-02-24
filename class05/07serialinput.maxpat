@@ -9,9 +9,54 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 293.0, 144.0, 600.0, 592.0 ],
+        "rect": [ 535.0, 180.0, 715.0, 705.0 ],
         "default_fontsize": 18.0,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-20",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 134.0, 538.0, 54.0, 54.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-9",
+                    "maxclass": "number",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 56.0, 538.0, 50.0, 29.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-1",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 76.0, 478.0, 72.0, 29.0 ],
+                    "text": "unjoin 2"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "linecount": 2,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 16.0, 379.0, 97.0, 49.0 ],
+                    "text": "50 48 50 32 48"
+                }
+            },
             {
                 "box": {
                     "id": "obj-26",
@@ -19,8 +64,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 238.0, 433.0, 173.0, 47.0 ],
-                    "presentation_linecount": 2,
+                    "patching_rect": [ 238.0, 433.0, 177.0, 47.0 ],
                     "text": "< parse as Max data (numbers, etc.)"
                 }
             },
@@ -31,7 +75,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 237.5, 380.0, 202.0, 27.0 ],
-                    "presentation_linecount": 2,
                     "text": "< convert bytes to ASCII"
                 }
             },
@@ -43,7 +86,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 237.5, 324.0, 178.0, 47.0 ],
-                    "presentation_linecount": 2,
                     "text": "< group on carriage return / line feed"
                 }
             },
@@ -53,7 +95,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 304.0, 516.0, 178.0, 27.0 ],
+                    "patching_rect": [ 421.0, 515.0, 178.0, 27.0 ],
                     "text": "< actual Arduino data"
                 }
             },
@@ -64,7 +106,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 110.0, 515.0, 177.0, 29.0 ]
+                    "patching_rect": [ 227.0, 514.0, 177.0, 29.0 ],
+                    "text": "202 0"
                 }
             },
             {
@@ -198,12 +241,24 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "" ],
-                    "patching_rect": [ 123.0, 156.0, 112.0, 29.0 ],
-                    "text": "serial a 9600"
+                    "patching_rect": [ 123.0, 156.0, 170.0, 29.0 ],
+                    "text": "serial c 9600 @dtr 1"
                 }
             }
         ],
         "lines": [
+            {
+                "patchline": {
+                    "destination": [ "obj-20", 0 ],
+                    "source": [ "obj-1", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-9", 0 ],
+                    "source": [ "obj-1", 0 ]
+                }
+            },
             {
                 "patchline": {
                     "destination": [ "obj-15", 0 ],
@@ -225,6 +280,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-17", 0 ],
+                    "order": 0,
+                    "source": [ "obj-16", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 1 ],
+                    "order": 1,
                     "source": [ "obj-16", 0 ]
                 }
             },
@@ -236,7 +299,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "order": 1,
+                    "source": [ "obj-18", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-21", 1 ],
+                    "order": 0,
                     "source": [ "obj-18", 0 ]
                 }
             },

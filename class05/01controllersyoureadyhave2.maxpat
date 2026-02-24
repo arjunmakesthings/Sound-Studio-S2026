@@ -108,7 +108,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 670.0, 671.0, 130.0, 47.0 ],
+                                    "patching_rect": [ 670.0, 671.0, 133.0, 47.0 ],
                                     "text": "interpolate and fade to zero"
                                 }
                             },
@@ -139,8 +139,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 377.0, 248.0, 93.0, 47.0 ],
-                                    "presentation_linecount": 2,
+                                    "patching_rect": [ 377.0, 248.0, 97.0, 47.0 ],
                                     "text": "< quantize to 1/4s"
                                 }
                             },
@@ -185,7 +184,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 111.0, 248.0, 113.0, 47.0 ],
+                                    "patching_rect": [ 111.0, 248.0, 117.0, 47.0 ],
                                     "text": "< quantize to semitones."
                                 }
                             },
@@ -207,7 +206,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 236.0, 536.0, 89.0, 27.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "modulator"
                                 }
                             },
@@ -968,7 +966,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 306.0, 748.0, 264.0, 27.0 ],
+                    "patching_rect": [ 306.0, 747.0, 264.0, 27.0 ],
                     "text": "mouse position (mouse up only)"
                 }
             },
@@ -978,7 +976,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 16.5, 728.0, 287.0, 27.0 ],
+                    "patching_rect": [ 17.0, 747.0, 287.0, 27.0 ],
                     "text": "mouse position (mouse down only)"
                 }
             },
@@ -1056,7 +1054,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 884.3333333333334, 389.0, 96.0, 29.0 ],
-                    "text": "123 96"
+                    "text": "14 77"
                 }
             },
             {
@@ -1089,7 +1087,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 586.0, 311.0, 311.0, 29.0 ],
-                    "text": "mouseidle 95 61 0 1 0 0 0 0 0 0 0"
+                    "text": "mouseidleout -46 52 0 0 0 0 0 0 0 0 0"
                 }
             },
             {
@@ -1307,8 +1305,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 528.0, 480.0, 121.0, 29.0 ],
-                    "text": "0 0 1728 1117"
+                    "patching_rect": [ 528.0, 480.0, 124.0, 29.0 ],
+                    "text": "0 0 1920 1200"
                 }
             },
             {
@@ -1362,7 +1360,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 539.0, 135.0, 150.0, 127.0 ],
+                    "patching_rect": [ 539.0, 135.0, 154.0, 127.0 ],
                     "text": "< [mousestate] tells you the state of your mouse. the first three outlets are pretty straightforward."
                 }
             },
@@ -1373,8 +1371,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 350.0, 19.0, 288.0, 107.0 ],
-                    "presentation_linecount": 5,
+                    "patching_rect": [ 350.0, 19.0, 293.0, 107.0 ],
                     "text": "< you can also use a [metro] object and bang the [mousestate]. in 'poll' mode, the [mousestate] only puts out data when you move your mouse."
                 }
             },
@@ -1440,7 +1437,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 18.0, 34.0, 193.0, 67.0 ],
+                    "patching_rect": [ 18.0, 34.0, 195.0, 67.0 ],
                     "text": "controllers you already have pt 2:\nthe mouse"
                 }
             },
@@ -1499,7 +1496,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-158", 1 ],
-                    "midpoints": [ 435.5, 468.3125, 639.5, 468.3125 ],
+                    "midpoints": [ 435.5, 468.3125, 642.5, 468.3125 ],
                     "order": 0,
                     "source": [ "obj-155", 0 ]
                 }

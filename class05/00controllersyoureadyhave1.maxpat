@@ -15,6 +15,38 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-16",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 890.0, 677.0, 54.0, 27.0 ],
+                    "text": "chord"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-12",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 788.0, 676.0, 89.0, 29.0 ],
+                    "text": "60, 63, 67"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-9",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 788.0, 724.0, 99.0, 29.0 ],
+                    "text": "60 100 100"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-137",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -31,7 +63,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 18.0, 34.0, 193.0, 67.0 ],
+                    "patching_rect": [ 18.0, 34.0, 195.0, 67.0 ],
                     "text": "controllers you already have pt 1:\nthe keyboard"
                 }
             },
@@ -382,8 +414,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 921.0, 176.0, 217.0, 47.0 ],
-                    "presentation_linecount": 3,
+                    "patching_rect": [ 921.0, 176.0, 222.0, 47.0 ],
                     "text": "example: use the z, x, c, v keys to play chords."
                 }
             },
@@ -394,8 +425,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 981.0, 333.0, 169.0, 87.0 ],
-                    "presentation_linecount": 4,
+                    "patching_rect": [ 981.0, 333.0, 173.0, 87.0 ],
                     "text": "< simple Max hash table data structure. double-click to see what's inside."
                 }
             },
@@ -406,7 +436,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 962.0, 428.0, 166.0, 67.0 ],
+                    "patching_rect": [ 962.0, 428.0, 169.0, 67.0 ],
                     "text": "< turn a list into a stream of individual messages"
                 }
             },
@@ -533,7 +563,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 723.0, 348.0, 172.0, 107.0 ],
+                    "patching_rect": [ 723.0, 348.0, 176.0, 107.0 ],
                     "text": "example: use the \"p\" key (ASCII 112) to turn on a toggle only when the key is down."
                 }
             },
@@ -636,7 +666,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 692.0, 28.0, 150.0, 127.0 ],
+                    "patching_rect": [ 692.0, 28.0, 153.0, 127.0 ],
                     "text": "< [keyup] reports when you pick up a key instead of press it. otherwise, same deal."
                 }
             },
@@ -825,7 +855,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 356.5, 231.0, 191.0, 87.0 ],
+                    "patching_rect": [ 356.5, 231.0, 192.0, 87.0 ],
                     "text": "< the [atoi] object will convert them into their standard character mappings"
                 }
             },
@@ -837,7 +867,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 300.0, 283.0, 50.0, 29.0 ],
-                    "text": "p"
+                    "text": "c"
                 }
             },
             {
@@ -969,6 +999,12 @@
                 "patchline": {
                     "destination": [ "obj-116", 0 ],
                     "source": [ "obj-119", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-71", 0 ],
+                    "source": [ "obj-12", 0 ]
                 }
             },
             {
@@ -1280,6 +1316,12 @@
                 "patchline": {
                     "destination": [ "obj-85", 0 ],
                     "source": [ "obj-89", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-71", 0 ],
+                    "source": [ "obj-9", 0 ]
                 }
             },
             {

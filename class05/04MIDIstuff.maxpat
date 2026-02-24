@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 293.0, 144.0, 1138.0, 793.0 ],
+        "rect": [ 256.0, 112.0, 1138.0, 793.0 ],
         "default_fontsize": 18.0,
         "boxes": [
             {
@@ -131,7 +131,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 181.8571428571429, 682.0, 112.0, 29.0 ]
+                    "patching_rect": [ 181.8571428571429, 682.0, 112.0, 29.0 ],
+                    "text": "17 53"
                 }
             },
             {
@@ -141,7 +142,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 109.0, 641.0, 112.0, 29.0 ]
+                    "patching_rect": [ 109.0, 641.0, 112.0, 29.0 ],
+                    "text": "69 0"
                 }
             },
             {
